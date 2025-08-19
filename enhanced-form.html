@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Simple HTML form example for beginners with accessibility and validation.">
+  <title>Simple Registration Form</title>
+</head>
+<body>
+
+  <header>
+    <h1>Event Registration</h1>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Instructions</h2>
+      <ul>
+        <li>Fill out all required fields marked with *</li>
+        <li>Provide accurate information</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Registration Form</h2>
+      <form>
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name *</label>
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+          <br><br>
+
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required>
+          <br><br>
+
+          <label for="age">Age</label>
+          <input type="number"min="10" max="100">
+          <br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <p>Preferred Session:</p>
+          <input type="radio" id="morning" value="morning" required>
+          <label for="morning">Morning</label>
+          <input type="radio" id="afternoon" value="afternoon">
+          <label for="afternoon">Afternoon</label>
+          <br><br>
+
+          <label for="comments">Comments</label>
+          <textarea placeholder="Any notes"></textarea>
+        </fieldset>
+
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Simple Event Registration</p>
+  </footer>
+
+</body>
+</html>
